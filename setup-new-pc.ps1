@@ -26,3 +26,6 @@ $envPath = [System.Environment]::GetEnvironmentVariable("Path", "Machine")
 $nvmPath = "C:\Program Files\nodejs"
 $newPath = "$envPath;$nvmPath"
 [System.Environment]::SetEnvironmentVariable("Path", $newPath, "Machine")
+
+# Running vsts-npm-auth command
+vsts-npm-auth -config .npmrc
